@@ -2,6 +2,39 @@ body {
     font-family: Poppins, sans-serif;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0;
+}
+
+.navbar .left {
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.navbar .right {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .right a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .right a:hover {
+    text-decoration: underline;
+}
+
+.navbar .right img {
+    width: 24px;
+    height: 24px;
+}
+
 .project-grid {
     display: grid;
     grid-template-areas: 
@@ -15,6 +48,7 @@ body {
     gap: 16px;
     width: 100%;
     max-width: 90%;
+    margin: 0 auto;
 }
 
 #eth {
@@ -87,6 +121,10 @@ body {
     cursor: pointer;
 }
 
+.overlay.white {
+    color: white;
+}
+
 @media only screen and (max-width: 1100px) {
     .project-grid {
         grid-template-areas: 
@@ -111,5 +149,9 @@ body {
             "cup cup"
             "foam foam"
             "dimensional dimensional";
+    }
+
+    .project .overlay {
+        font-size: 24px;
     }
 }
